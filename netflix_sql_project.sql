@@ -27,17 +27,13 @@ FROM netflix;
 
 --1. Count the number of Movies vs TV shows
 
-SELECT
-     type,
-	 Count(*) as0
+SELECT type,Count(*) as0
 FROM netflix
 GROUP BY type
 
---2. Find the most comman rating for mavies and TV shows
+--2. Find the most comman rating for movies and TV shows
 
-SELECT
-	type,
-	rating
+SELECT type,rating
 	FROM(
 
 
